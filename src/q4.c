@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-   for (int p = 2; p < 100; p += 2) {
-        printf("%d ", p);
+    for (int i = 2; i <= 100; i += 2) {
+        printf("%d ", i);
     }
     return 0;
 }
