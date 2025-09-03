@@ -1,22 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int n, i = 1;
-    int factorial = 1;  
-    printf("Enter a positive integer: ");
+    int n;
     scanf("%d", &n);
 
-    if (n < 0) {
-        printf("Factorial is not defined for negative numbers.\n");
+    int factorial = 1;
+    int i = n;
+
+    if (n == 0 || n == 1) {
+        factorial = 1;
     } else {
         do {
             factorial *= i;
-            i++;
-        } while (i <= n);
-
-        printf("Factorial of %d = %d\n", n, factorial);
+            i--;
+        } while (i > 1);
     }
 
+    printf("%d\n", factorial);
     return 0;
 }
- 

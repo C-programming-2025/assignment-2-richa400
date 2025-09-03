@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n, i = 1, fact = 1;
-
+    int n;
     printf("Enter a positive integer: ");
     scanf("%d", &n);
 
-    while (i <= n) {
-        fact = fact * i;
-        i++;
+    unsigned long long factorial = 1;
+    int i = n;
+
+    while (i > 1) {
+        factorial *= i;
+        i--;
     }
 
-    printf("Factorial of %d = %d\n", n, fact);
-
+    printf("%llu\n", factorial);
     return 0;
 }

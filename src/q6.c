@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int n, i = 1;
-    printf("Enter a number: ");
+    int n;
     scanf("%d", &n);
+
+    int i = 1;
     do {
-        printf("%d x %d = %d\n", n, i, n * i);
+        printf("%d ", n * i);
         i++;
     } while (i <= 10);
 
