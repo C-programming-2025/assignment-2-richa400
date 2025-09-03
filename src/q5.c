@@ -1,1 +1,17 @@
-// Write a C program that prompts the user for a positive integer and calculates the factorial of that number using a while loop.
+#include <stdio.h>
+
+int main() {
+    int n, i = 1, fact = 1;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    while (i <= n) {
+        fact = fact * i;
+        i++;
+    }
+
+    printf("Factorial of %d = %d\n", n, fact);
+
+    return 0;
+}
